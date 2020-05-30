@@ -1,4 +1,4 @@
-## Vision-based Robotic Grasping: Papers and Codes
+# Vision-based Robotic Grasping: Papers and Codes
 
 The essential information to grasp the target object is the 6D gripper pose in the camera coordinate, which contains the 3D gripper position and the 3D gripper orientation to execute the grasp. Within the methods of vision-based robotic grasping, the estimation of 6D gripper poses varies aiming at different grasp manners, which can be categorized into __2D planar grasp__ and __6DoF grasp__.
 
