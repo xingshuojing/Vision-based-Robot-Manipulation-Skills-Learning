@@ -4,7 +4,7 @@
 * [1. Computer Vision](#1-computer-vision)
 	* [1.1 Object Localization without Classification](#11-object-localization-without-classification)
 		* [1.1.1 2D-based Methods](#111-2d-based-methods)
-			* [a. Fitting 2D Shape Primitives](#afitting-2d-shape-primitives)
+			* [a. Fitting 2D Shape Primitives](#a-fitting-2d-shape-primitives)
 			* [b. Saliency Detection](#b-saliency-detection)
 		* [1.1.2 3D-based Methods](#112-3d-based-methods)
 			* [a. Fitting 3D Shape Primitives](#afitting-3d-shape-primitives)
