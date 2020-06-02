@@ -27,7 +27,7 @@
 			* [a. Two-stage methods](#a-two-stage-methods-1)
 			* [b. One-stage Methods](#b-one-stage-methods)
 			* [c. 3D deep learning networks](#c-3d-deep-learning-networks)
-	* [1.4. Object Pose Estimation](#14-object-pose-estimation)
+	* [1.4 Object Pose Estimation](#14-object-pose-estimation)
 		* [1.4.1 RGB-D Image-based Methods](#141-rgb-d-image-based-methods)
 			* [1.4.1.1 Correspondence-based Methods](#1411-correspondence-based-methods)
 				* [a. Match 2D feature points](#a-match-2d-feature-points)
@@ -927,19 +927,11 @@ This kind of methods utilize both rgb images and depth images/point clouds. Ther
 
 **[CVPR]** SyncSpecCNN: Synchronized Spectral CNN for 3D Shape Segmentation, [[paper](https://arxiv.org/abs/1612.00606)]
 
-
-
-
-
-
-
-
-
-## 2. Object Pose Estimation
+### 1.4 Object Pose Estimation
 
 This part mainly discuss 6D object pose estimation methods, which can be categorized into __RGB-D image-based methods__ and __point cloud-based methods__. RGB-D image-based methods mainly utilized the 2D RGB image and the 2.5D Depth image. Point cloud-based methods utilize registration-based methods.
 
-### 2.1 RGB-D Image-based Methods
+#### 1.4.1 RGB-D Image-based Methods
 
 ***Survey papers:***
 
@@ -951,9 +943,9 @@ This part mainly discuss 6D object pose estimation methods, which can be categor
 
 **[ECCVW]** A Summary of the 4th International Workshop on Recovering 6D Object Pose, [[paper](https://arxiv.org/abs/1810.03758)]
 
-#### 2.1.1 Correspondence-based Methods
+##### 1.4.1.1 Correspondence-based Methods
 
-##### a. Match 2D feature points
+###### a. Match 2D feature points
 
 ***2020:***
 
@@ -981,9 +973,7 @@ This part mainly discuss 6D object pose estimation methods, which can be categor
 
 **[3DIMPVT]** 3D Object Detection and Localization using Multimodal Point Pair Features, [[paper](http://far.in.tum.de/pub/drost20123dimpvt/drost20123dimpvt.pdf)]
 
-
-
-##### b. Regress 2D projections
+###### b. Regress 2D projections
 
 ***2020:***
 
@@ -1027,9 +1017,7 @@ This part mainly discuss 6D object pose estimation methods, which can be categor
 
 **[ICRA]** 6-DoF Object Pose from Semantic Keypoints, [[paper](https://arxiv.org/abs/1703.04670)]
 
-
-
-#### 2.1.2 Template-based Methods
+##### 1.4.1.2 Template-based Methods
 
 This kind of methods can be regarded as regression-based methods.
 
@@ -1111,9 +1099,7 @@ This kind of methods can be regarded as regression-based methods.
 
 **[ACCV]** Model based training, detection and pose estimation of texture-less 3d objects in heavily cluttered scenes, [[paper](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.250.6547&rep=rep1&type=pdf)]
 
-
-
-#### 2.1.3 Voting-based Methods
+##### 1.4.1.3 Voting-based Methods
 
 ***2019:***
 
@@ -1131,8 +1117,6 @@ This kind of methods can be regarded as regression-based methods.
 
 **[ECCV]** Latent-class hough forests for 3d object detection and pose estimation, [[paper](https://labicvl.github.io/docs/pubs/Aly_ECCV_2014.pdf)]
 
-
-
 ***Datasets:***
 
 [LineMOD](http://campar.in.tum.de/Main/StefanHinterstoisser): Model based training, detection and pose estimation of texture-less 3d objects in heavily cluttered scenes, ACCV, 2012 [[paper](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.250.6547&rep=rep1&type=pdf)] [[database](https://github.com/paroj/linemod_dataset)]
@@ -1145,13 +1129,11 @@ HomebrewedDB: RGB-D Dataset for 6D Pose Estimation of 3D Objects, ICCVW, 2019 [[
 
 YCB-M: A Multi-Camera RGB-D Dataset for Object Recognition and 6DoF Pose Estimation, arXiv, 2020, [[paper](https://arxiv.org/pdf/2004.11657.pdf)] [[database](https://zenodo.org/record/2579173#.XqgpkxMzbX8)]
 
-
-
-### 2.2 Point Cloud-based Methods
+#### 1.4.2 Point Cloud-based Methods
 
 The partial-view point cloud will be aligned to the complete shape in order to obtain the 6D pose. Generally, coarse registration should be conduct firstly to provide an intial alignment, and dense registration methods like ICP (Iterative Closest Point) will be conducted to obtain the final 6D pose.
 
-#### 2.2.1 Correspondence-based Methods
+##### 1.4.2.1 Correspondence-based Methods
 
 ***2020:***
 
@@ -1207,9 +1189,7 @@ The partial-view point cloud will be aligned to the complete shape in order to o
 
 **[ICRA]** Fast Point Feature Histograms (FPFH) for 3D registration, [[paper](https://www.cvl.iis.u-tokyo.ac.jp/class2016/2016w/papers/6.3DdataProcessing/Rusu_FPFH_ICRA2009.pdf)]
 
-
-
-#### 2.2.2 Template-based Methods
+##### 1.4.2.2 Template-based Methods
 
 ***Survey papers:***
 
@@ -1218,8 +1198,6 @@ The partial-view point cloud will be aligned to the complete shape in order to o
 **[arXiv]** When Deep Learning Meets Data Alignment: A Review on Deep Registration Networks (DRNs), [[paper](https://arxiv.org/pdf/2003.03167.pdf)]
 
 **[arXiv]** Least Squares Optimization: from Theory to Practice, [[paper](https://arxiv.org/pdf/2002.11051.pdf)]
-
-
 
 ***2020:***
 
@@ -1277,11 +1255,7 @@ The partial-view point cloud will be aligned to the complete shape in order to o
 
 **[SGP]** Super 4PCS Fast Global Pointcloud Registration via Smart Indexing, [[paper](https://geometry.cs.ucl.ac.uk/projects/2014/super4PCS/super4pcs.pdf)] [[code](https://github.com/nmellado/Super4PCS)]
 
-
-
-#### 2.2.3 Voting-based Methods
-
-
+##### 1.4.2.3 Voting-based Methods
 
 ***2020:***
 
@@ -1297,11 +1271,9 @@ The partial-view point cloud will be aligned to the complete shape in order to o
 
 **[CVPR]** Densefusion: 6d object pose estimation by iterative dense fusion, [[paper](https://arxiv.org/abs/1901.04780)] [[code](https://github.com/j96w/DenseFusion)]
 
+#### 1.4.3 Category-level Methods
 
-
-### 2.3 Category-level Methods
-
-#### 2.3.1 Category-level 6D pose estimation
+##### 1.4.3.1 Category-level 6D pose estimation
 
 ***2020:***
 
@@ -1325,9 +1297,7 @@ The partial-view point cloud will be aligned to the complete shape in order to o
 
 **[arXiv]** kPAM: KeyPoint Affordances for Category-Level Robotic Manipulation, [[paper](https://arxiv.org/abs/1903.06684)]
 
-
-
-#### 2.3.2 3D shape reconstruction from images
+##### 1.4.3.2 3D shape reconstruction from images
 
 ***2020:***
 
@@ -1381,9 +1351,7 @@ The partial-view point cloud will be aligned to the complete shape in order to o
 
 **[arXiv]** Deep-Learning Assisted High-Resolution Binocular Stereo Depth Reconstruction, [[paper](https://arxiv.org/abs/1912.05012)]
 
-
-
-#### 2.3.3 3D shape rendering
+##### 1.4.3.3 3D shape rendering
 
 ***2019:***
 
@@ -1393,11 +1361,201 @@ The partial-view point cloud will be aligned to the complete shape in order to o
 
 **[arXiv]** Neural Voxel Renderer: Learning an Accurate and Controllable Rendering Tool, [[paper](https://arxiv.org/abs/1912.04591)]
 
+## 2. Manipulation Skills Learning
 
+### 2.1 Few Data Learning
 
-## 3. 2D Planar Grasp
+#### 2.1.1 Simulation to Reality
 
-### 3.1 Estimating Grasp Contact Points
+***2020:***
+
+**[arXiv]** How to Close Sim-Real Gap? Transfer with Segmentation!, [[paper](https://arxiv.org/pdf/2005.07695.pdf)]
+
+**[arXiv]** A Study on the Challenges of Using Robotics Simulators for Testing, [[paper](https://arxiv.org/pdf/2004.07368.pdf)]
+
+**[arXiv]** Joint Supervised and Self-Supervised Learning for 3D Real-World Challenges, [[paper](https://arxiv.org/pdf/2004.07392.pdf)]
+
+**[arXiv]** RoboTHOR: An Open Simulation-to-Real Embodied AI Platform, [[paper](https://arxiv.org/pdf/2004.06799.pdf)]
+
+**[arXiv]** On the Effectiveness of Virtual Reality-based Training for Robotic Setup, [[paper](https://arxiv.org/pdf/2003.01540.pdf)]
+
+**[arXiv]** LiDARNet: A Boundary-Aware Domain Adaptation Model for Lidar Point Cloud Semantic Segmentation, [[paper](https://arxiv.org/pdf/2003.01174.pdf)]
+
+**[arXiv]** Multi-source Domain Adaptation in the Deep Learning Era: A Systematic Survey, [[paper](https://arxiv.org/pdf/2002.12169.pdf)]
+
+**[arXiv]** Learning Machines from Simulation to Real World, [[paper](https://arxiv.org/pdf/2002.10853.pdf)]
+
+**[arXiv]** Sim2Real2Sim: Bridging the Gap Between Simulation and Real-World in Flexible Object Manipulation, [[paper](https://arxiv.org/pdf/2002.02538.pdf)]
+
+***2019:***
+
+**[IROS]** Learning to Augment Synthetic Images for Sim2Real Policy Transfer, [[paper](https://arxiv.org/pdf/1903.07740.pdf)]
+
+**[arXiv]** Accept Synthetic Objects as Real-End-to-End Training of Attentive Deep Visuomotor Policies for Manipulation in Clutter, [[paper](https://arxiv.org/abs/1909.11128)]
+
+**[RSSW]** Generative grasp synthesis from demonstration using parametric mixtures, [[paper](https://arxiv.org/abs/1906.11548)]
+
+***2018:***
+
+**[RSS]** Learning Task-Oriented Grasping for Tool Manipulation from Simulated Self-Supervision, [[paper](https://arxiv.org/abs/1806.09266)]
+
+**[CoRL]** Deep Object Pose Estimation for Semantic Robotic Grasping of Household Objects, [[paper](https://arxiv.org/abs/1809.10790)]
+
+**[arXiv]** Multi-Task Domain Adaptation for Deep Learning of Instance Grasping from Simulation, [[paper](https://arxiv.org/abs/1710.06422)]
+
+***2017:***
+
+**[arXiv]** Using Simulation and Domain Adaptation to Improve Efficiency of Deep Robotic Grasping, [[paper](https://arxiv.org/abs/1709.07857)]
+
+#### 2.1.2 Self-supervised Methods
+
+***2019:***
+
+**[arXiv]** Self-supervised 6D Object Pose Estimation for Robot Manipulation, [[paper](https://arxiv.org/abs/1909.10159)]
+
+***2018:***
+
+**[RSS]** Learning Task-Oriented Grasping for Tool Manipulation from Simulated Self-Supervision, [[paper](https://arxiv.org/abs/1806.09266)]
+
+### 2.2 Imitation Learning
+
+***2020:***
+
+**[arXiv]** HOPE-Net: A Graph-based Model for Hand-Object Pose Estimation, [[paper](https://arxiv.org/pdf/2004.00060.pdf)]
+
+**[arXiv]** SQUIRL: Robust and Efficient Learning from Video Demonstration of Long-Horizon Robotic Manipulation Tasks, [[paper](https://arxiv.org/pdf/2003.04956.pdf)]
+
+**[arXiv]** A Geometric Perspective on Visual Imitation Learning, [[paper](https://arxiv.org/pdf/2003.02768.pdf)]
+
+**[arXiv]** Vision-based Robot Manipulation Learning via Human Demonstrations, [[paper](https://arxiv.org/pdf/2003.00385.pdf)]
+
+**[arXiv]** Gaussian-Process-based Robot Learning from Demonstration, [[paper](https://arxiv.org/pdf/2002.09979.pdf)]
+
+***2019:***
+
+**[arXiv]** Grasping in the Wild: Learning 6DoF Closed-Loop Grasping from Low-Cost Demonstrations, [[paper](https://arxiv.org/abs/1912.04344)] [[project](https://graspinwild.cs.columbia.edu/)]
+
+**[arXiv]** Motion Reasoning for Goal-Based Imitation Learning, [[paper](https://arxiv.org/abs/1911.05864)]
+
+**[IROS]** Robot Learning of Shifting Objects for Grasping in Cluttered Environments, [[paper](https://arxiv.org/abs/1907.11035)] [[code](https://github.com/pantor/learning-shifting-for-grasping)]
+
+**[arXiv]** Learning Deep Parameterized Skills from Demonstration for Re-targetable Visuomotor Control, [[paper](https://arxiv.org/abs/1910.10628)]
+
+**[arXiv]** Adversarial Skill Networks: Unsupervised Robot Skill Learning from Video, [[paper](https://arxiv.org/abs/1910.09430)]
+
+**[IROS]** Learning Actions from Human Demonstration Video for Robotic Manipulation, [[paper](https://arxiv.org/abs/1909.04312)]
+
+**[RSSW]** Generative grasp synthesis from demonstration using parametric mixtures, [[paper](https://arxiv.org/abs/1906.11548)]
+
+***2018:***
+
+**[arXiv]** Deep Imitation Learning for Complex Manipulation Tasks from Virtual Reality Teleoperation, [[paper](https://arxiv.org/abs/1710.04615)]
+
+### 2.3 Reinforcement Learning
+
+***2020:***
+
+**[ICLR]** The Ingredients of Real World Robotic Reinforcement Learning, [[paper](https://arxiv.org/pdf/2004.12570.pdf)]
+
+**[arXiv]** Efficient Adaptation for End-to-End Vision-Based Robotic Manipulation, [[paper](https://arxiv.org/pdf/2004.10190.pdf)]
+
+**[arXiv]** Spatial Action Maps for Mobile Manipulation, [[paper](https://arxiv.org/pdf/2004.09141.pdf)]
+
+**[arXiv]** Learning Precise 3D Manipulation from Multiple Uncalibrated Cameras, [[paper](https://arxiv.org/pdf/2002.09107.pdf)]
+
+**[arXiv]** The Surprising Effectiveness of Linear Models for Visual Foresight in Object Pile Manipulation, [[paper](https://arxiv.org/pdf/2002.09093.pdf)]
+
+**[arXiv]** Learning Pregrasp Manipulation of Objects from Ungraspable Poses, [[paper](https://arxiv.org/pdf/2002.06344.pdf)]
+
+**[arXiv]** Deep Reinforcement Learning for Autonomous Driving: A Survey, [[paper](https://arxiv.org/pdf/2002.00444.pdf)]
+
+**[arXiv]** Lyceum: An efficient and scalable ecosystem for robot learning, [[paper](https://arxiv.org/pdf/2001.07343.pdf)]
+
+**[arXiv]** Planning an Efficient and Robust Base Sequence for a Mobile Manipulator Performing Multiple Pick-and-place Tasks, [[paper](https://arxiv.org/pdf/2001.08042.pdf)]
+
+**[arXiv]** Reward Engineering for Object Pick and Place Training, [[paper](https://arxiv.org/pdf/2001.03792.pdf)]
+
+***2019:***
+
+**[arXiv]** Towards Practical Multi-Object Manipulation using Relational Reinforcement Learning, [[paper](https://arxiv.org/abs/1912.11032)] [[project](https://richardrl.github.io/relational-rl/)] [[code](https://github.com/richardrl/rlkit-relational)]
+
+**[ROBIO]** Efficient Robotic Task Generalization Using Deep Model Fusion Reinforcement Learning, [[paper](https://arxiv.org/abs/1912.05205)]
+
+**[arXiv]** Contextual Reinforcement Learning of Visuo-tactile Multi-fingered Grasping Policies, [[paper](https://arxiv.org/abs/1911.09233)]
+
+**[IROS]** Scaling Robot Supervision to Hundreds of Hours with RoboTurk: Robotic Manipulation Dataset through Human Reasoning and Dexterity, [[paper](https://arxiv.org/abs/1911.04052)]
+
+**[arXiv]** IRIS: Implicit Reinforcement without Interaction at Scale for Learning Control from Offline Robot Manipulation Data, [[paper](https://arxiv.org/abs/1911.05321)]
+
+**[arXiv]** Dynamic Cloth Manipulation with Deep Reinforcement Learning, [[paper](https://arxiv.org/abs/1910.14475)]
+
+**[CoRL]** Relay Policy Learning: Solving Long-Horizon Tasks via Imitation and Reinforcement Learning, [[paper](https://arxiv.org/abs/1910.11956)] [[project](https://relay-policy-learning.github.io/)]
+
+**[CoRL]** Asynchronous Methods for Model-Based Reinforcement Learning, [[paper](https://arxiv.org/abs/1910.12453)]
+
+**[CoRL]** Entity Abstraction in Visual Model-Based Reinforcement Learning, [[paper](https://arxiv.org/abs/1910.12827)]
+
+**[CoRL]** Dynamics Learning with Cascaded Variational Inference for Multi-Step Manipulation, [[paper](https://arxiv.org/abs/1910.13395)] [[project](http://pair.stanford.edu/cavin/)]
+
+**[arXiv]** Contextual Imagined Goals for Self-Supervised Robotic Learning, [[paper](https://arxiv.org/abs/1910.11670)]
+
+**[arXiv]** Learning to Manipulate Deformable Objects without Demonstrations, [[paper](https://arxiv.org/abs/1910.13439)] [[project](https://sites.google.com/view/alternating-pick-and-place)]
+
+**[arXiv]** A Deep Learning Approach to Grasping the Invisible, [[paper](https://arxiv.org/abs/1909.04840)]
+
+**[arXiv]** Knowledge Induced Deep Q-Network for a Slide-to-Wall Object Grasping, [[paper](https://arxiv.org/abs/1910.03781)]
+
+**[arXiv]** Quantile QT-Opt for Risk-Aware Vision-Based Robotic Grasping, [[paper](https://arxiv.org/abs/1910.02787)]
+
+**[arXiv]** Adaptive Curriculum Generation from Demonstrations for Sim-to-Real Visuomotor Control, [[paper](https://arxiv.org/abs/1910.07972)]
+
+**[arXiv]** Reinforcement Learning for Robotic Manipulation using Simulated Locomotion Demonstrations, [[paper](https://arxiv.org/abs/1910.07294)]
+
+**[arXiv]** Self-Supervised Sim-to-Real Adaptation for Visual Robotic Manipulation, [[paper](https://arxiv.org/abs/1910.09470)]
+
+**[arXiv]** Object Perception and Grasping in Open-Ended Domains, [[paper](https://arxiv.org/abs/1907.10932)]
+
+**[CoRL]** ROBEL: Robotics Benchmarks for Learning with Low-Cost Robots, [[paper](https://arxiv.org/abs/1909.11639)] [[code](https://sites.google.com/view/roboticsbenchmarks/)]
+
+**[RSS]** End-to-End Robotic Reinforcement Learning without Reward Engineering, [[paper](https://arxiv.org/abs/1904.07854)]
+
+**[arXiv]** Learning to combine primitive skills: A step towards versatile robotic manipulation, [[paper](https://arxiv.org/abs/1908.00722)]
+
+**[CoRL]** A Survey on Reproducibility by Evaluating Deep Reinforcement Learning Algorithms on Real-World Robots, [[paper](https://arxiv.org/abs/1909.03772)] [[code](https://github.com/dti-research/SenseActExperiments/)]
+
+**[ICCAS]** Deep Reinforcement Learning Based Robot Arm Manipulation with Efficient Training Data through Simulation, [[paper](https://arxiv.org/abs/1907.06884)]
+
+**[CVPR]** CRAVES: Controlling Robotic Arm with a Vision-based Economic System, [[paper](https://arxiv.org/abs/1812.00725)] [[code](https://github.com/zuoym15/craves.ai)]
+
+**[Report]** A Unified Framework for Manipulating Objects via Reinforcement Learning, [[paper](https://course.ie.cuhk.edu.hk/~ierg6130/2019/report/team7.pdf)]
+
+***2018:***
+
+**[IROS]** Learning Synergies between Pushing and Grasping with Self-supervised Deep Reinforcement Learning, [[paper](https://arxiv.org/abs/1803.09956)] [[code](https://github.com/andyzeng/visual-pushing-grasping)]
+
+**[CoRL]** QT-Opt: Scalable Deep Reinforcement Learning for Vision-Based Robotic Manipulation, [[paper](https://arxiv.org/abs/1806.10293)]
+
+**[arXiv]** Deep Reinforcement Learning for Vision-Based Robotic Grasping: A Simulated Comparative Evaluation of Off-Policy Methods, [[paper](https://arxiv.org/abs/1802.10264)]
+
+**[arXiv]** Pick and Place Without Geometric Object Models, [[paper](https://arxiv.org/abs/1707.05615)]
+
+***2017:***
+
+**[arXiv]** Deep Reinforcement Learning for Robotic Manipulation-The state of the art, [[paper](https://arxiv.org/abs/1701.08878)]
+
+***2016:***
+
+**[IJRR]** Learning Hand-Eye Coordination for Robotic Grasping with Deep Learning, [[paper](https://arxiv.org/abs/1603.02199)]
+
+***2013:***
+
+**[IJRR]** Reinforcement learning in robotics: A survey, [[paper](https://ri.cmu.edu/pub_files/2013/7/Kober_IJRR_2013.pdf)]
+
+### 2.4 Grasp Detection
+
+#### 2.4.1 2D Planar Grasp
+
+##### 2.4.1.1 Estimating Grasp Contact Points
 
 ***2019:***
 
@@ -1431,9 +1589,7 @@ The partial-view point cloud will be aligned to the complete shape in order to o
 
 [Dex-Net](https://berkeleyautomation.github.io/dex-net/#dexnet_2), a synthetic dataset of 6.7 million point clouds, grasps, and robust analytic grasp metrics generated from thousands of 3D models.
 
-
-
-### 3.2 Estimating Oriented Rectangles
+##### 2.4.1.2 Estimating Oriented Rectangles
 
 ***2020:***
 
@@ -1513,18 +1669,16 @@ The partial-view point cloud will be aligned to the complete shape in order to o
 
 [Jacquard Dataset](https://jacquard.liris.cnrs.fr), Jacquard: A Large Scale Dataset for Robotic Grasp Detection” in *IEEE International Conference on Intelligent Robots and Systems*, 2018, [[paper](https://arxiv.org/abs/1803.11469)]
 
-
-
-## 4. 6DoF Grasp
+#### 2.4.2 6DoF Grasp
 
 **Grasp Representation:**
 The grasp is represented as 6DoF pose in 3D domain, and the gripper can grasp the object from various angles. The input to this task is 3D point cloud from RGB-D sensors, and this task contains two stages. In the first stage, the target object should be extracted from the scene. In the second stage, if there exists an existing 3D model, the 6D pose of the object could be computed. If there exists no 3D models, the 6DoF grasp pose will be computed from some other methods.
 
-### 4.1 Methods based on Single-view Point Cloud
+##### 2.4.2.1 Methods based on Single-view Point Cloud
 
 In this situation, there exist no 3D models, an the 6-DoF grasps are estimated from available partial data. This can be implemented by directly estimating from partial view point cloud, or indirectly estimating after shape completion.
 
-#### 4.1.1 Methods of Estimating Candidate Grasps
+###### 2.4.2.1.1 Methods of Estimating Candidate Grasps
 
 ***2020:***
 
@@ -1576,11 +1730,9 @@ In this situation, there exist no 3D models, an the 6-DoF grasps are estimated f
 
 **[RAS]** Learning grasping points with shape context, [[paper](https://www.sciencedirect.com/science/article/abs/pii/S0921889009001699)]
 
+###### 2.4.2.1.2 Methods of Transferring Grasps
 
-
-#### 4.1.2 Methods of Transferring Grasps
-
-##### a. Grasp transfer
+####### a. Grasp transfer
 
 ***2020:***
 
@@ -1608,9 +1760,7 @@ In this situation, there exist no 3D models, an the 6-DoF grasps are estimated f
 
 **[ICRA]** Automatic grasp planning using shape primitives, [[paper](https://ieeexplore.ieee.org/abstract/document/1241860)]
 
-
-
-##### b. Non-rigid registration
+####### b. Non-rigid registration
 
 ***2020:***
 
@@ -1630,9 +1780,7 @@ In this situation, there exist no 3D models, an the 6-DoF grasps are estimated f
 
 **[RAS]** Autonomous Dual-Arm Manipulation of Familiar Objects, [[paper](https://arxiv.org/abs/1811.08716)]
 
-
-
-##### c. Shape correspondence
+####### c. Shape correspondence
 
 ***2020:***
 
@@ -1668,11 +1816,9 @@ In this situation, there exist no 3D models, an the 6-DoF grasps are estimated f
 
 **[C&G]** Partial correspondence of 3D shapes using properties of the nearest-neighbor field, [[paper](http://webee.technion.ac.il/~ayellet/Ps/19-ATZ.pdf)]
 
+##### 2.4.2.2 Methods based on Complete Shape
 
-
-### 4.2 Methods based on Complete Shape
-
-#### 4.2.1 Methods of Estimating 6D Object Pose
+###### 2.4.2.2.1 Methods of Estimating 6D Object Pose
 
 ***2017:***
 
@@ -1692,11 +1838,9 @@ In this situation, there exist no 3D models, an the 6-DoF grasps are estimated f
 
 **[RAM]** Graspit! A versatile simulator for robotic grasping, [[paper](https://ieeexplore.ieee.org/abstract/document/1371616)] [[code](https://github.com/graspit-simulator/graspit)]
 
+###### 2.4.2.2.2 Methods of Shape Completion
 
-
-#### 4.2.2 Methods of Shape Completion
-
-##### a. Shape Completion-based Grasp
+####### a. Shape Completion-based Grasp
 
 ***2020:***
 
@@ -1724,9 +1868,7 @@ In this situation, there exist no 3D models, an the 6-DoF grasps are estimated f
 
 **[IROS]** Shape Completion Enabled Robotic Grasping, [[paper](https://arxiv.org/abs/1609.08546)]
 
-
-
-##### b. Shape Completion or Generation
+####### b. Shape Completion or Generation
 
 ***2020:***
 
@@ -1774,9 +1916,7 @@ In this situation, there exist no 3D models, an the 6-DoF grasps are estimated f
 
 **[3DORW]** Completion of Cultural Heritage Objects with Rotational Symmetry, [[paper](https://diglib.eg.org/bitstream/handle/10.2312/3dor20181057/087-093.pdf?sequence=1&isAllowed=y)]
 
-
-
-##### c. Depth Completion and Estimation
+####### c. Depth Completion and Estimation
 
 ***2020:***
 
@@ -1902,9 +2042,7 @@ In this situation, there exist no 3D models, an the 6-DoF grasps are estimated f
 
 **[CVPR]** Deep Depth Completion of a Single RGB-D Image, [[paper](https://arxiv.org/abs/1803.09326)] [[code](https://github.com/yindaz/DeepCompletionRelease)]
 
-
-
-##### d. Point Cloud Denoising and Samping
+####### d. Point Cloud Denoising and Samping
 
 ***2020:***
 
@@ -1934,11 +2072,11 @@ In this situation, there exist no 3D models, an the 6-DoF grasps are estimated f
 
 **[CVPR]** PU-Net: Point Cloud Upsampling Network, [[paper](https://arxiv.org/abs/1801.06761)] [[code](https://github.com/yulequan/PU-Net)]
 
+## 3. Others
 
+### 3.1 Task-oriented Methods
 
-## 5. Task-oriented Methods
-
-### 5.1 Task-oriented Manipulation
+#### 3.1.1 Task-oriented Manipulation
 
 ***2020:***
 
@@ -1970,9 +2108,7 @@ In this situation, there exist no 3D models, an the 6-DoF grasps are estimated f
 
 **[arXiv]** Learning Task-Oriented Grasping from Human Activity Datasets, [[paper](https://arxiv.org/abs/1910.11669)]
 
-
-
-### 5.2 Grasp Affordance
+#### 3.1.2 Grasp Affordance
 
 ***2020:***
 
@@ -1994,9 +2130,7 @@ In this situation, there exist no 3D models, an the 6-DoF grasps are estimated f
 
 **[arXiv]** Workspace Aware Online Grasp Planning, [[paper](https://arxiv.org/abs/1806.11402)]
 
-
-
-### 5.3 3D Part Segmentation
+#### 3.1.3 3D Part Segmentation
 
 ***2020:***
 
@@ -2022,9 +2156,7 @@ In this situation, there exist no 3D models, an the 6-DoF grasps are estimated f
 
 **[SiggraphAsia]** A Scalable Active Framework for Region Annotation in 3D Shape Collections, [[paper](https://cs.stanford.edu/~ericyi/project_page/part_annotation/)]
 
-
-
-## 6. Dexterous Grippers
+### 3.2 Dexterous Grippers
 
 ***2020:***
 
@@ -2086,65 +2218,7 @@ In this situation, there exist no 3D models, an the 6-DoF grasps are estimated f
 
 **[ICRA]** High-Fidelity Grasping in Virtual Reality using a Glove-based System, [[paper](https://github.com/zzlyw/ICRA19_VRGloveSystem/blob/master/doc/ICRA19.pdf)] [[code](https://github.com/zzlyw/ICRA19_VRGloveSystem)]
 
-
-
-## 7. Data Generation
-
-### 7.1 Simulation to Reality
-
-***2020:***
-
-**[arXiv]** How to Close Sim-Real Gap? Transfer with Segmentation!, [[paper](https://arxiv.org/pdf/2005.07695.pdf)]
-
-**[arXiv]** A Study on the Challenges of Using Robotics Simulators for Testing, [[paper](https://arxiv.org/pdf/2004.07368.pdf)]
-
-**[arXiv]** Joint Supervised and Self-Supervised Learning for 3D Real-World Challenges, [[paper](https://arxiv.org/pdf/2004.07392.pdf)]
-
-**[arXiv]** RoboTHOR: An Open Simulation-to-Real Embodied AI Platform, [[paper](https://arxiv.org/pdf/2004.06799.pdf)]
-
-**[arXiv]** On the Effectiveness of Virtual Reality-based Training for Robotic Setup, [[paper](https://arxiv.org/pdf/2003.01540.pdf)]
-
-**[arXiv]** LiDARNet: A Boundary-Aware Domain Adaptation Model for Lidar Point Cloud Semantic Segmentation, [[paper](https://arxiv.org/pdf/2003.01174.pdf)]
-
-**[arXiv]** Multi-source Domain Adaptation in the Deep Learning Era: A Systematic Survey, [[paper](https://arxiv.org/pdf/2002.12169.pdf)]
-
-**[arXiv]** Learning Machines from Simulation to Real World, [[paper](https://arxiv.org/pdf/2002.10853.pdf)]
-
-**[arXiv]** Sim2Real2Sim: Bridging the Gap Between Simulation and Real-World in Flexible Object Manipulation, [[paper](https://arxiv.org/pdf/2002.02538.pdf)]
-
-***2019:***
-
-**[IROS]** Learning to Augment Synthetic Images for Sim2Real Policy Transfer, [[paper](https://arxiv.org/pdf/1903.07740.pdf)]
-
-**[arXiv]** Accept Synthetic Objects as Real-End-to-End Training of Attentive Deep Visuomotor Policies for Manipulation in Clutter, [[paper](https://arxiv.org/abs/1909.11128)]
-
-**[RSSW]** Generative grasp synthesis from demonstration using parametric mixtures, [[paper](https://arxiv.org/abs/1906.11548)]
-
-***2018:***
-
-**[RSS]** Learning Task-Oriented Grasping for Tool Manipulation from Simulated Self-Supervision, [[paper](https://arxiv.org/abs/1806.09266)]
-
-**[CoRL]** Deep Object Pose Estimation for Semantic Robotic Grasping of Household Objects, [[paper](https://arxiv.org/abs/1809.10790)]
-
-**[arXiv]** Multi-Task Domain Adaptation for Deep Learning of Instance Grasping from Simulation, [[paper](https://arxiv.org/abs/1710.06422)]
-
-***2017:***
-
-**[arXiv]** Using Simulation and Domain Adaptation to Improve Efficiency of Deep Robotic Grasping, [[paper](https://arxiv.org/abs/1709.07857)]
-
-### 7.2 Self-supervised Methods
-
-***2019:***
-
-**[arXiv]** Self-supervised 6D Object Pose Estimation for Robot Manipulation, [[paper](https://arxiv.org/abs/1909.10159)]
-
-***2018:***
-
-**[RSS]** Learning Task-Oriented Grasping for Tool Manipulation from Simulated Self-Supervision, [[paper](https://arxiv.org/abs/1806.09266)]
-
-
-
-## 8. Multi-source
+### 3.3 Multi-source
 
 ***2020:***
 
@@ -2170,11 +2244,9 @@ In this situation, there exist no 3D models, an the 6-DoF grasps are estimated f
 
 **[arXiv]** Learning to Grasp without Seeing, [[paper](https://arxiv.org/abs/1805.04201)]
 
+### 3.4 Motion Planning
 
-
-## 9. Motion Planning
-
-### 9.1 Visual servoing
+#### 3.4.1 Visual servoing
 
 ***2020:***
 
@@ -2206,9 +2278,7 @@ In this situation, there exist no 3D models, an the 6-DoF grasps are estimated f
 
 **[ICRA]** Robot Arm Pose Estimation through Pixel-Wise Part Classification, [[paper](https://www.is.mpg.de/uploads_file/attachment/attachment/176/2014_ICRA_brhs_small.pdf)]
 
-
-
-### 9.2 Path Planning
+#### 3.4.2 Path Planning
 
 ***2020:***
 
@@ -2228,147 +2298,7 @@ In this situation, there exist no 3D models, an the 6-DoF grasps are estimated f
 
 **[arXiv]** Parareal with a Learned Coarse Model for Robotic Manipulation, [[paper](https://arxiv.org/abs/1912.05958)]
 
-
-
-## 10. Imitation Learning
-
-***2020:***
-
-**[arXiv]** HOPE-Net: A Graph-based Model for Hand-Object Pose Estimation, [[paper](https://arxiv.org/pdf/2004.00060.pdf)]
-
-**[arXiv]** SQUIRL: Robust and Efficient Learning from Video Demonstration of Long-Horizon Robotic Manipulation Tasks, [[paper](https://arxiv.org/pdf/2003.04956.pdf)]
-
-**[arXiv]** A Geometric Perspective on Visual Imitation Learning, [[paper](https://arxiv.org/pdf/2003.02768.pdf)]
-
-**[arXiv]** Vision-based Robot Manipulation Learning via Human Demonstrations, [[paper](https://arxiv.org/pdf/2003.00385.pdf)]
-
-**[arXiv]** Gaussian-Process-based Robot Learning from Demonstration, [[paper](https://arxiv.org/pdf/2002.09979.pdf)]
-
-***2019:***
-
-**[arXiv]** Grasping in the Wild: Learning 6DoF Closed-Loop Grasping from Low-Cost Demonstrations, [[paper](https://arxiv.org/abs/1912.04344)] [[project](https://graspinwild.cs.columbia.edu/)]
-
-**[arXiv]** Motion Reasoning for Goal-Based Imitation Learning, [[paper](https://arxiv.org/abs/1911.05864)]
-
-**[IROS]** Robot Learning of Shifting Objects for Grasping in Cluttered Environments, [[paper](https://arxiv.org/abs/1907.11035)] [[code](https://github.com/pantor/learning-shifting-for-grasping)]
-
-**[arXiv]** Learning Deep Parameterized Skills from Demonstration for Re-targetable Visuomotor Control, [[paper](https://arxiv.org/abs/1910.10628)]
-
-**[arXiv]** Adversarial Skill Networks: Unsupervised Robot Skill Learning from Video, [[paper](https://arxiv.org/abs/1910.09430)]
-
-**[IROS]** Learning Actions from Human Demonstration Video for Robotic Manipulation, [[paper](https://arxiv.org/abs/1909.04312)]
-
-**[RSSW]** Generative grasp synthesis from demonstration using parametric mixtures, [[paper](https://arxiv.org/abs/1906.11548)]
-
-***2018:***
-
-**[arXiv]** Deep Imitation Learning for Complex Manipulation Tasks from Virtual Reality Teleoperation, [[paper](https://arxiv.org/abs/1710.04615)]
-
-
-
-## 11. Reinforcement Learning
-
-***2020:***
-
-**[ICLR]** The Ingredients of Real World Robotic Reinforcement Learning, [[paper](https://arxiv.org/pdf/2004.12570.pdf)]
-
-**[arXiv]** Efficient Adaptation for End-to-End Vision-Based Robotic Manipulation, [[paper](https://arxiv.org/pdf/2004.10190.pdf)]
-
-**[arXiv]** Spatial Action Maps for Mobile Manipulation, [[paper](https://arxiv.org/pdf/2004.09141.pdf)]
-
-**[arXiv]** Learning Precise 3D Manipulation from Multiple Uncalibrated Cameras, [[paper](https://arxiv.org/pdf/2002.09107.pdf)]
-
-**[arXiv]** The Surprising Effectiveness of Linear Models for Visual Foresight in Object Pile Manipulation, [[paper](https://arxiv.org/pdf/2002.09093.pdf)]
-
-**[arXiv]** Learning Pregrasp Manipulation of Objects from Ungraspable Poses, [[paper](https://arxiv.org/pdf/2002.06344.pdf)]
-
-**[arXiv]** Deep Reinforcement Learning for Autonomous Driving: A Survey, [[paper](https://arxiv.org/pdf/2002.00444.pdf)]
-
-**[arXiv]** Lyceum: An efficient and scalable ecosystem for robot learning, [[paper](https://arxiv.org/pdf/2001.07343.pdf)]
-
-**[arXiv]** Planning an Efficient and Robust Base Sequence for a Mobile Manipulator Performing Multiple Pick-and-place Tasks, [[paper](https://arxiv.org/pdf/2001.08042.pdf)]
-
-**[arXiv]** Reward Engineering for Object Pick and Place Training, [[paper](https://arxiv.org/pdf/2001.03792.pdf)]
-
-***2019:***
-
-**[arXiv]** Towards Practical Multi-Object Manipulation using Relational Reinforcement Learning, [[paper](https://arxiv.org/abs/1912.11032)] [[project](https://richardrl.github.io/relational-rl/)] [[code](https://github.com/richardrl/rlkit-relational)]
-
-**[ROBIO]** Efficient Robotic Task Generalization Using Deep Model Fusion Reinforcement Learning, [[paper](https://arxiv.org/abs/1912.05205)]
-
-**[arXiv]** Contextual Reinforcement Learning of Visuo-tactile Multi-fingered Grasping Policies, [[paper](https://arxiv.org/abs/1911.09233)]
-
-**[IROS]** Scaling Robot Supervision to Hundreds of Hours with RoboTurk: Robotic Manipulation Dataset through Human Reasoning and Dexterity, [[paper](https://arxiv.org/abs/1911.04052)]
-
-**[arXiv]** IRIS: Implicit Reinforcement without Interaction at Scale for Learning Control from Offline Robot Manipulation Data, [[paper](https://arxiv.org/abs/1911.05321)]
-
-**[arXiv]** Dynamic Cloth Manipulation with Deep Reinforcement Learning, [[paper](https://arxiv.org/abs/1910.14475)]
-
-**[CoRL]** Relay Policy Learning: Solving Long-Horizon Tasks via Imitation and Reinforcement Learning, [[paper](https://arxiv.org/abs/1910.11956)] [[project](https://relay-policy-learning.github.io/)]
-
-**[CoRL]** Asynchronous Methods for Model-Based Reinforcement Learning, [[paper](https://arxiv.org/abs/1910.12453)]
-
-**[CoRL]** Entity Abstraction in Visual Model-Based Reinforcement Learning, [[paper](https://arxiv.org/abs/1910.12827)]
-
-**[CoRL]** Dynamics Learning with Cascaded Variational Inference for Multi-Step Manipulation, [[paper](https://arxiv.org/abs/1910.13395)] [[project](http://pair.stanford.edu/cavin/)]
-
-**[arXiv]** Contextual Imagined Goals for Self-Supervised Robotic Learning, [[paper](https://arxiv.org/abs/1910.11670)]
-
-**[arXiv]** Learning to Manipulate Deformable Objects without Demonstrations, [[paper](https://arxiv.org/abs/1910.13439)] [[project](https://sites.google.com/view/alternating-pick-and-place)]
-
-**[arXiv]** A Deep Learning Approach to Grasping the Invisible, [[paper](https://arxiv.org/abs/1909.04840)]
-
-**[arXiv]** Knowledge Induced Deep Q-Network for a Slide-to-Wall Object Grasping, [[paper](https://arxiv.org/abs/1910.03781)]
-
-**[arXiv]** Quantile QT-Opt for Risk-Aware Vision-Based Robotic Grasping, [[paper](https://arxiv.org/abs/1910.02787)]
-
-**[arXiv]** Adaptive Curriculum Generation from Demonstrations for Sim-to-Real Visuomotor Control, [[paper](https://arxiv.org/abs/1910.07972)]
-
-**[arXiv]** Reinforcement Learning for Robotic Manipulation using Simulated Locomotion Demonstrations, [[paper](https://arxiv.org/abs/1910.07294)]
-
-**[arXiv]** Self-Supervised Sim-to-Real Adaptation for Visual Robotic Manipulation, [[paper](https://arxiv.org/abs/1910.09470)]
-
-**[arXiv]** Object Perception and Grasping in Open-Ended Domains, [[paper](https://arxiv.org/abs/1907.10932)]
-
-**[CoRL]** ROBEL: Robotics Benchmarks for Learning with Low-Cost Robots, [[paper](https://arxiv.org/abs/1909.11639)] [[code](https://sites.google.com/view/roboticsbenchmarks/)]
-
-**[RSS]** End-to-End Robotic Reinforcement Learning without Reward Engineering, [[paper](https://arxiv.org/abs/1904.07854)]
-
-**[arXiv]** Learning to combine primitive skills: A step towards versatile robotic manipulation, [[paper](https://arxiv.org/abs/1908.00722)]
-
-**[CoRL]** A Survey on Reproducibility by Evaluating Deep Reinforcement Learning Algorithms on Real-World Robots, [[paper](https://arxiv.org/abs/1909.03772)] [[code](https://github.com/dti-research/SenseActExperiments/)]
-
-**[ICCAS]** Deep Reinforcement Learning Based Robot Arm Manipulation with Efficient Training Data through Simulation, [[paper](https://arxiv.org/abs/1907.06884)]
-
-**[CVPR]** CRAVES: Controlling Robotic Arm with a Vision-based Economic System, [[paper](https://arxiv.org/abs/1812.00725)] [[code](https://github.com/zuoym15/craves.ai)]
-
-**[Report]** A Unified Framework for Manipulating Objects via Reinforcement Learning, [[paper](https://course.ie.cuhk.edu.hk/~ierg6130/2019/report/team7.pdf)]
-
-***2018:***
-
-**[IROS]** Learning Synergies between Pushing and Grasping with Self-supervised Deep Reinforcement Learning, [[paper](https://arxiv.org/abs/1803.09956)] [[code](https://github.com/andyzeng/visual-pushing-grasping)]
-
-**[CoRL]** QT-Opt: Scalable Deep Reinforcement Learning for Vision-Based Robotic Manipulation, [[paper](https://arxiv.org/abs/1806.10293)]
-
-**[arXiv]** Deep Reinforcement Learning for Vision-Based Robotic Grasping: A Simulated Comparative Evaluation of Off-Policy Methods, [[paper](https://arxiv.org/abs/1802.10264)]
-
-**[arXiv]** Pick and Place Without Geometric Object Models, [[paper](https://arxiv.org/abs/1707.05615)]
-
-***2017:***
-
-**[arXiv]** Deep Reinforcement Learning for Robotic Manipulation-The state of the art, [[paper](https://arxiv.org/abs/1701.08878)]
-
-***2016:***
-
-**[IJRR]** Learning Hand-Eye Coordination for Robotic Grasping with Deep Learning, [[paper](https://arxiv.org/abs/1603.02199)]
-
-***2013:***
-
-**[IJRR]** Reinforcement learning in robotics: A survey, [[paper](https://ri.cmu.edu/pub_files/2013/7/Kober_IJRR_2013.pdf)]
-
-
-
-## 12. Experts
+### 3.5 Experts
 
 [Abhinav Gupta](http://www.cs.cmu.edu/~abhinavg/)(CMU & FAIR): Robotics, machine learning
 
