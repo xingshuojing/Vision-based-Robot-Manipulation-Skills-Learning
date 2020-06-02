@@ -94,21 +94,17 @@
 
 **[RAS]** 2012-An overview of 3D object grasp synthesis algorithms - A Survey, [[paper](https://www.sciencedirect.com/science/article/abs/pii/S0921889011001485)]
 
-## 1. Object Localization
+## 1. Computer Vision
 
 ### 1.1 Object Localization without Classification
 
-
-
 #### 1.1.1 2D-based Methods
 
-##### a.Fitting 2D Shape Primitives
+##### a. Fitting 2D Shape Primitives
 
 **[BMVC]** A buyer’s guide to conic fitting, [[paper](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.36.695)] [[code](https://docs.opencv.org/2.4/modules/imgproc/doc/structural_analysis_and_shape_descriptors.html?highlight=fitellipse)]
 
 **[IJGIG]** Algorithms for the reduction of the number of points required to represent a digitized line or its caricature, [[paper](https://pdfs.semanticscholar.org/e46a/c802d7207e0e51b5333456a3f46519c2f92d.pdf)] [[code](https://docs.opencv.org/2.4/modules/imgproc/doc/structural_analysis_and_shape_descriptors.html?highlight=fitellipse#approxpolydp)]
-
-
 
 ##### b. Saliency Detection
 
@@ -190,8 +186,6 @@
 
 **[ECCV]** Geodesic saliency using background priors, [[paper](http://jiansun.org/papers/ECCV12_GeodesicSaliency.pdf)]
 
-
-
 #### 1.1.2 3D-based Methods
 
 ##### a.Fitting 3D Shape Primitives
@@ -230,8 +224,6 @@
 
 **[COM]** Random sample consensus: a paradigm for model fitting with applications to image analysis and automated cartography, [[paper](http://www.cs.ait.ac.th/~mdailey/cvreadings/Fischler-RANSAC.pdf)]
 
-
-
 ##### b. Saliency Detection
 
 ***2019:***
@@ -267,8 +259,6 @@
 ***2008:***
 
 **[WACV]** Segmentation of salient regions in outdoor scenes using imagery and 3-d data, [[paper](https://ieeexplore.ieee.org/abstract/document/4544014)]
-
-
 
 ### 1.2 Object Detection
 
@@ -382,8 +372,6 @@ Detailed paper lists can refer to [hoya012](https://github.com/hoya012/deep_lear
 
 **[ICCV]** SIFT: Object Recognition from Local Scale-Invariant Features, [[paper](https://ieeexplore.ieee.org/abstract/document/790410)]
 
-
-
 ##### b. Single-stage methods
 
 ***2020:***
@@ -426,8 +414,6 @@ Detailed paper lists can refer to [hoya012](https://github.com/hoya012/deep_lear
 
 **[ECCV]** SSD: Single Shot MultiBox Detector, [[paper](https://arxiv.org/abs/1512.02325)] [[code](https://github.com/balancap/SSD-Tensorflow)]
 
-
-
 ------
 
 ***Dataset:***
@@ -439,8 +425,6 @@ Detailed paper lists can refer to [hoya012](https://github.com/hoya012/deep_lear
 [Microsoft COCO](http://cocodataset.org/): Common Objects in Context, is a large-scale object detection, segmentation, and captioning dataset, [[paper](https://arxiv.org/pdf/1405.0312.pdf)]
 
 [Open Images](https://storage.googleapis.com/openimages/web/index.html): a collaborative release of ~9 million images annotated with labels spanning thousands of object categories, [[paper](https://arxiv.org/pdf/1811.00982v1.pdf)]
-
-
 
 #### 1.2.2 3D Object Detection
 
@@ -510,8 +494,6 @@ Most of this kind of methods estimate depth images from RGB images, and then con
 
 **[arXiv]** Monocular 3D Object Detection via Geometric Reasoning on Keypoints, [[paper](https://arxiv.org/abs/1905.05618)]
 
-
-
 ##### b. Point cloud-based methods
 
 This kind of methods only consume the 3D point cloud data.
@@ -519,8 +501,6 @@ This kind of methods only consume the 3D point cloud data.
 ***Survey papers:***
 
 **[arXiv]** 2019-Deep Learning for 3D Point Clouds: A Survey, [[paper](https://arxiv.org/pdf/1912.12033.pdf)]
-
-
 
 ***2020:***
 
@@ -606,8 +586,6 @@ This kind of methods only consume the 3D point cloud data.
 
 **[ECCVW]** YOLO3D: End-to-end real-time 3D Oriented Object Bounding Box Detection from LiDAR Point Cloud, [[paper](https://arxiv.org/abs/1808.02350)]
 
-
-
 ##### c. Fusion methods
 
 This kind of methods utilize both rgb images and depth images/point clouds. There exist early fusion methods, late fusion methods, and dense fusion methods.
@@ -665,8 +643,6 @@ This kind of methods utilize both rgb images and depth images/point clouds. Ther
 
 **[CVPR]** Deep sliding shapes for amodal 3d object detection in rgb-d images, [[paper](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Song_Deep_Sliding_Shapes_CVPR_2016_paper.pdf)]
 
-
-
 ### 1.3 Object Instance Segmentation
 
 #### 1.3.1 2D Instance Segmentation
@@ -714,8 +690,6 @@ This kind of methods utilize both rgb images and depth images/point clouds. Ther
 ***2014:***
 
 **[ECCV]** Simultaneous detection and segmentation, [[paper](https://arxiv.org/pdf/1407.1808.pdf)]
-
-
 
 ##### c. One-stage methods
 
@@ -781,8 +755,6 @@ This kind of methods utilize both rgb images and depth images/point clouds. Ther
 
 **[ECCV]** SDS: Simultaneous Detection and Segmentation, [[paper](https://arxiv.org/pdf/1407.1808.pdf)]
 
-
-
 ***Applications in Robotics:***
 
 ***2020:***
@@ -794,8 +766,6 @@ This kind of methods utilize both rgb images and depth images/point clouds. Ther
 **[arXiv]** Instance Segmentation of Visible and Occluded Regions for Finding and Picking Target from a Pile of Objects, [[paper](https://arxiv.org/pdf/2001.07475.pdf)]
 
 **[arXiv]** Joint Learning of Instance and Semantic Segmentation for Robotic Pick-and-Place with Heavy Occlusions in Clutter, [[paper](https://arxiv.org/pdf/2001.07481.pdf)]
-
-
 
 ##### d. Panoptic segmentation
 
@@ -820,8 +790,6 @@ This kind of methods utilize both rgb images and depth images/point clouds. Ther
 **[IV]** Single Network Panoptic Segmentation for Street Scene Understanding, [[paper](https://arxiv.org/pdf/1902.02678.pdf)] [[code](https://github.com/DdeGeus/single-network-panoptic-segmentation)]
 
 **[ITSC]** Multi-task Network for Panoptic Segmentation in Automated Driving, [[paper](https://ieeexplore.ieee.org/abstract/document/8917422)]
-
-
 
 #### 1.3.2 3D Instance Segmentation
 
@@ -867,8 +835,6 @@ This kind of methods utilize both rgb images and depth images/point clouds. Ther
 
 **[arXiv]** GSPN: Generative Shape Proposal Network for 3D Instance Segmentation in Point Cloud, [[paper](https://arxiv.org/abs/1812.03320)]
 
-
-
 ##### b. One-stage Methods
 
 ***2020:***
@@ -888,8 +854,6 @@ This kind of methods utilize both rgb images and depth images/point clouds. Ther
 **[CVPR]** SGPN: Similarity Group Proposal Network for 3D Point Cloud Instance Segmentation, [[paper](http://openaccess.thecvf.com/content_cvpr_2018/papers/Wang_SGPN_Similarity_Group_CVPR_2018_paper.pdf)]
 
 **[CVPR]** JSIS3D: joint semantic-instance segmentation of 3d point clouds with multi-task pointwise networks and multi-value conditional random fields, [[paper](http://openaccess.thecvf.com/content_CVPR_2019/papers/Pham_JSIS3D_Joint_Semantic-Instance_Segmentation_of_3D_Point_Clouds_With_Multi-Task_CVPR_2019_paper.pdf)]
-
-
 
 ##### c. 3D deep learning networks
 
@@ -962,6 +926,12 @@ This kind of methods utilize both rgb images and depth images/point clouds. Ther
 **[NeurIPS]** PointNet++: Deep Hierarchical Feature Learning on Point Sets in a Metric Space, [[paper](https://github.com/charlesq34/pointnet2)] [[code](https://github.com/charlesq34/pointnet2)]
 
 **[CVPR]** SyncSpecCNN: Synchronized Spectral CNN for 3D Shape Segmentation, [[paper](https://arxiv.org/abs/1612.00606)]
+
+
+
+
+
+
 
 
 
