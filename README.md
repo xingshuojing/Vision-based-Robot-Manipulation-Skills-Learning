@@ -48,7 +48,7 @@
 	   * [2.1.2 Self-supervised Methods](#212-self-supervised-methods)
 	* [2.2 Imitation Learning](#22-imitation-learning)
 	* [2.3 Reinforcement Learning](#23-reinforcement-learning)
-	* [2.4 Grasp Detection](#24 grasp-detection)
+	* [2.4 Grasp Detection](#24-grasp-detection)
 		* [2.4.1 2D Planar Grasp](#241-2d-planar-grasp)
 			* [2.4.1.1 Estimating Grasp Contact Points](#2411-estimating-grasp-contact-points)
 			* [2.4.1.2 Estimating Oriented Rectangles](#2412-estimating-oriented-rectangles)
@@ -74,8 +74,8 @@
 	* [3.2 Dexterous Grippers](#32-dexterous-grippers)
 	* [3.3 Multi-source](#33-multi-source)
 	* [3.4 Motion Planning](#34-motion-planning)
-	* [3.4.1 Visual servoing](#341-visual-servoing)
-	* [3.4.2 Path Planning](#342-path-planning)
+		* [3.4.1 Visual servoing](#341-visual-servoing)
+		* [3.4.2 Path Planning](#342-path-planning)
 	* [3.5 Experts](#35-experts)
 
 
