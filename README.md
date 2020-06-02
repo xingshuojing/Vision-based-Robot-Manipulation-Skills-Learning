@@ -77,11 +77,7 @@
 		* [3.4.1 Visual servoing](#341-visual-servoing)
 		* [3.4.2 Path Planning](#342-path-planning)
 	* [3.5 Experts](#35-experts)
-
-
-
-
-
+	
 ## 0. Review Papers
 
 **[arXiv]** 2020-Affordances in Robotic Tasks - A Survey, [[paper](https://arxiv.org/pdf/2004.07400.pdf)]
@@ -97,8 +93,6 @@
 **[ToR]** 2016-Data-Driven Grasp Synthesis - A Survey, [[paper](https://arxiv.org/abs/1309.2660)]
 
 **[RAS]** 2012-An overview of 3D object grasp synthesis algorithms - A Survey, [[paper](https://www.sciencedirect.com/science/article/abs/pii/S0921889011001485)]
-
-
 
 ## 1. Object Localization
 
