@@ -1,17 +1,5 @@
 # Vision-based Robot Manipulation Skills Learning
 
-
-
-The essential information to grasp the target object is the 6D gripper pose in the camera coordinate, which contains the 3D gripper position and the 3D gripper orientation to execute the grasp. Within the methods of vision-based robotic grasping, the estimation of 6D gripper poses varies aiming at different grasp manners, which can be categorized into __2D planar grasp__ and __6DoF grasp__.
-
-__2D planar grasp__ means that the target object lies on a plane workspace and the grasp is constrained from one direction. The essential information is simplified from 6D into 3D, which are the 2D in-plane positions and 1D rotation angle. There exist methods of __evaluating grasp contact points__ and methods of __evaluating grasp oriented rectangles__.
-
-__6DoF grasp__ means that the gripper can grasp the object from various angles in the 3D domain, and the essential 6D gripper pose could not be simplified. Based on whether the grasp is conducted on the complete shape or on the single-view point cloud, methods are categorized into __methods based on the partial point cloud__ and __methods based on the complete shape__. Methods based on the partial point cloud contains __methods of estimating candidate grasps__ and __methods of transferring grasps__ from existing grasps database.  Methods based on the complete shape contains __methods of estimating 6D object pose__ and __methods of shape completion__. Most of current 6DoF grasp methods aim at known objects where the grasps could be precomputed manually or by simulation, and the problem is thus transformed into a __6D object pose estimation__ problem.
-
-Besides, most of the robotic grasping approaches require __the target object’s location__ in the input data first. This involves three different stages: __object localization without classification__, __object detection__ and __object instance segmentation__. Object localization without classification only outputs the potential regions of the target objects without knowing their categories. Object detection provides bounding boxes of the target objects with their categories. Object instance segmentation further provides pixel or point-level regions of the target objects with their categories.
-
-I summarize all above kinds of methods in this repository, and hope to present a big picture for friends work on vision-based robotic grasping. The table of content is listed as follows.
-
   * [Vision-based Robotic Grasping: Papers and Codes](#vision-based-robotic-grasping-papers-and-codes)
   * [0. Review Papers](#0-review-papers)
   * [1. Object Localization](#1-object-localization)
